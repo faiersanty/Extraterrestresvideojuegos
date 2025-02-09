@@ -1,0 +1,213 @@
+/* Variables de colores y fuentes */
+:root {
+    --primary-color: #00ff00;
+    --text-color: white;
+    --background-color: rgba(0, 0, 0, 0.8);
+    --secondary-background-color: rgba(0, 0, 0, 0.5);
+    --product-background-color: rgba(0, 0, 0, 0.7);
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+/* Estilo del cuerpo */
+body {
+    background-image: url('/archivo principal/img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+}
+
+/* Encabezado */
+header {
+    background-color: var(--background-color);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+/* Sección de bienvenida */
+section#inicio {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--secondary-background-color);
+    margin-bottom: 50px;
+}
+
+/* Sección de servicio técnico */
+#Servicio-Tecnico {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.servicio-tecnico-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilizar la imagen como botón */
+.servicio-tecnico-container a {
+    display: inline-block;
+}
+
+.servicio-tecnico-container img {
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.servicio-tecnico-container img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* 🎨 Estilo para el botón "SERVICIO TÉCNICO" */
+.servicio-tecnico-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(8, 8, 8);
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.servicio-tecnico-btn:hover {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+}
+
+/* Texto de Servicio Técnico en color negro */
+.servicio-tecnico-text {
+    color: rgb white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Sección catálogo */
+section#catalogo {
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    background-color: var(--product-background-color);
+    border-radius: 10px;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.producto button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: auto;
+}
+
+.producto button:hover {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+/* Sección contacto */
+section#contacto {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+section#contacto a {
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Sección Sobre Nosotros */
+section#sobre-nosotros {
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 50px 20px;
+    background-color: var(--secondary-background-color);
+    border-radius: 10px;
+}
+
+section#contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-color);
+}
